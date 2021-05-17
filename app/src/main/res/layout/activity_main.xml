@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF13041C"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:id="@+id/layoutHome"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sendEmail"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/share_to_mail"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/email_details"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/email"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10sp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/newEntry"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/add"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#312339"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="10sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="50sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF13041C"
+                        app:srcCompat="@android:drawable/ic_menu_search"
+                        app:tint="#FFFFFF" />
+
+                    <EditText
+                        android:id="@+id/searchText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:backgroundTint="#8013041C"
+                        android:ems="10"
+                        android:hint="Search..."
+                        android:inputType="textPersonName"
+                        android:paddingTop="10sp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FF13041C"
+                        android:textColorHint="#FFFFFF"
+                        android:textColorLink="#FF13041C"
+                        android:textSize="14sp"
+                        android:nextFocusUp="@id/searchText"
+                        android:nextFocusLeft="@id/searchText"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_entries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

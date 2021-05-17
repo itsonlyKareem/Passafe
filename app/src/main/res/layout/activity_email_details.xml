@@ -193,6 +193,7 @@
             android:layout_marginRight="20sp"
             android:layout_weight="0"
             android:text="Save"
+            android:textColor="#FFFFFF"
             app:cornerRadius="20sp"
             app:rippleColor="#2962FF" />
     </LinearLayout>

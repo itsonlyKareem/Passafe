@@ -311,11 +311,12 @@
                     android:layout_marginBottom="20sp"
                     android:backgroundTint="#54147A"
                     android:elevation="10dp"
-                    android:text="Save"
-                    app:cornerRadius="20dp"
-                    app:rippleColor="#00712F"
                     android:nextFocusLeft="@id/saveButton"
-                    android:nextFocusUp="@id/saveButton"/>
+                    android:nextFocusUp="@id/saveButton"
+                    android:text="Save"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="20dp"
+                    app:rippleColor="#00712F" />
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>

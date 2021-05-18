@@ -1,0 +1,303 @@
+{
+  "project_info": {
+    "project_number": "962299750790",
+    "firebase_url": "https://usd2egp-7040a.firebaseio.com",
+    "project_id": "usd2egp-7040a",
+    "storage_bucket": "usd2egp-7040a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:7622bc41072c6e65126407",
+        "android_client_info": {
+          "package_name": "com.alyhassan.d2e"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:5ce6c5afa0cc6522126407",
+        "android_client_info": {
+          "package_name": "com.alyhassan.dollar2egp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-u7hhq6kbn8cc4bq93d2i5guss91t5168.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alyhassan.dollar2egp",
+            "certificate_hash": "a8330c136daa9727ef3716c4fac7747dd184b68f"
+          }
+        },
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:e435061c834e6e81126407",
+        "android_client_info": {
+          "package_name": "com.elmoledmol.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:56fee78743856d36126407",
+        "android_client_info": {
+          "package_name": "com.hwaya.candytest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:ec66096120c9de38126407",
+        "android_client_info": {
+          "package_name": "com.hwaya.khyma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-uvjqcklre4fgmbdfufkoak1giqhck1s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hwaya.khyma",
+            "certificate_hash": "b79dbdacadab063f1ab7e1e25c5a11e317e78ec2"
+          }
+        },
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9037650239384734~6453608340"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:530f490fd3f096eb",
+        "android_client_info": {
+          "package_name": "com.itrex.dollarprice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-t885pdkbjismcn9pt7qf0imfslmdj1tk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itrex.dollarprice",
+            "certificate_hash": "0067e4cdb2cbd9443c3921511e4b0cf9b021848c"
+          }
+        },
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962299750790:android:4a37918d70f5a0c2",
+        "android_client_info": {
+          "package_name": "com.itrex.nourhan.dollarprice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962299750790-i2q60lrg7qaipvdim7uur2mh1id0t9i5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itrex.nourhan.dollarprice",
+            "certificate_hash": "ffef4bf7dc00a26a4f3a5caa451f4149000d8d45"
+          }
+        },
+        {
+          "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbG7Wl44595NJGf5aB6RjAl59h1Dsz2XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962299750790-vl9d5bmkggdmtpt1n8qb5c7kh7536mm4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "962299750790-0n9uef25sco9d0i1qlqdvbj2htkh3g5o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.alnagaha.Passafe",
+                "app_store_id": "1210278705"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

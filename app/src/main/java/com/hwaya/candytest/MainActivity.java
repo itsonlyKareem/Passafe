@@ -19,6 +19,7 @@ import android.os.CancellationSignal;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroupOverlay;
@@ -41,7 +42,24 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.billingclient.api.BillingClient;
+import com.android.billingclient.api.BillingClientStateListener;
+import com.android.billingclient.api.BillingFlowParams;
+import com.android.billingclient.api.BillingResult;
+import com.android.billingclient.api.Purchase;
+import com.android.billingclient.api.PurchasesUpdatedListener;
+import com.android.billingclient.api.SkuDetails;
+import com.android.billingclient.api.SkuDetailsParams;
+import com.android.billingclient.api.SkuDetailsResponseListener;
+import com.anjlab.android.iab.v3.BillingProcessor;
+import com.anjlab.android.iab.v3.TransactionDetails;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -60,7 +78,7 @@ import java.util.concurrent.Executor;
 
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BillingProcessor.IBillingHandler {
 
     Spinner spinner;
     RecyclerView recyclerView;
@@ -74,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
     private int AuthenticationFlag = 0;
     BiometricPrompt biometricPrompt;
     LinearLayout homeLayout;
+    FirebaseAnalytics mFirebaseAnalytics;
+    BillingProcessor bp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -411,7 +431,17 @@ public class MainActivity extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
 
         homeLayout = findViewById(R.id.layoutHome);
-//        homeLayout.setVisibility(View.INVISIBLE);
+
+        // Firebase analytics handling here
+        FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        Bundle bundle = new Bundle();
+        bundle.putString("image_name", "kareem");
+        bundle.putString("full_text", "text");
+        firebaseAnalytics.logEvent("share_image", bundle);
+
+        // Billing System handling here
+//        bp = new BillingProcessor(this, );
+//        bp.initialize();
 
 
     }
@@ -502,7 +532,22 @@ public class MainActivity extends AppCompatActivity {
                 homeLayout.setVisibility(View.VISIBLE);
             }
         }
+
+//        if (!bp.handleActivityResult(requestCode,resultCode,data)) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//            if (resultCode == RESULT_OK) {
+//                bp.subscribe(this,)
+//            }
+//        }
     }
+
+//    @Override
+//    protected void onDestroy() {
+//        if (bp != null) {
+//            bp.release();
+//        }
+//        super.onDestroy();
+//    }
 
     @RequiresApi(api = Build.VERSION_CODES.P)
     public void authenticateFingerPrint() {
@@ -619,5 +664,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
+    }
+
+    @Override
+    public void onProductPurchased(String productId, TransactionDetails details) {
+
+    }
+
+    @Override
+    public void onPurchaseHistoryRestored() {
+
+    }
+
+    @Override
+    public void onBillingError(int errorCode, Throwable error) {
+
+    }
+
+    @Override
+    public void onBillingInitialized() {
+
     }
 }

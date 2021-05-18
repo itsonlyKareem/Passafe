@@ -96,6 +96,7 @@ public class EmailDetails extends AppCompatActivity {
         emailLayout.setVisibility(View.INVISIBLE);
         authenticateFingerPrint();
         if (AuthenticationFlag == 1) {
+            emailLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }
     }

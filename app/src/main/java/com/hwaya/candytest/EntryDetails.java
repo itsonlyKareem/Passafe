@@ -224,6 +224,7 @@ public class EntryDetails extends AppCompatActivity {
         entryLayout.setVisibility(View.INVISIBLE);
         authenticateFingerPrint();
         if (AuthenticationFlag == 1) {
+            entryLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }
     }

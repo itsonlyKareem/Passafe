@@ -411,7 +411,7 @@ public class MainActivity extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
 
         homeLayout = findViewById(R.id.layoutHome);
-        homeLayout.setVisibility(View.INVISIBLE);
+//        homeLayout.setVisibility(View.INVISIBLE);
 
 
     }
@@ -482,11 +482,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        homeLayout.setVisibility(View.INVISIBLE);
+
         authenticateFingerPrint();
+        homeLayout.setVisibility(View.INVISIBLE);
         if (AuthenticationFlag == 1) {
+            homeLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }
+//        homeLayout.setVisibility(View.INVISIBLE);
     }
 
 

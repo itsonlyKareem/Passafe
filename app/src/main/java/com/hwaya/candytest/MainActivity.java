@@ -482,10 +482,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
+        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
         authenticateFingerPrint();
         homeLayout.setVisibility(View.INVISIBLE);
-        if (AuthenticationFlag == 1) {
+        if (AuthenticationFlag == 1 || !keyguardManager.isDeviceSecure()) {
             homeLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }

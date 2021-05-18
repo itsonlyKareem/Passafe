@@ -221,9 +221,10 @@ public class EntryDetails extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
         entryLayout.setVisibility(View.INVISIBLE);
         authenticateFingerPrint();
-        if (AuthenticationFlag == 1) {
+        if (AuthenticationFlag == 1 || !keyguardManager.isDeviceSecure()) {
             entryLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }

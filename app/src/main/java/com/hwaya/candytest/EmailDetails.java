@@ -93,9 +93,10 @@ public class EmailDetails extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
         emailLayout.setVisibility(View.INVISIBLE);
         authenticateFingerPrint();
-        if (AuthenticationFlag == 1) {
+        if (AuthenticationFlag == 1 || !keyguardManager.isDeviceSecure()) {
             emailLayout.setVisibility(View.VISIBLE);
             AuthenticationFlag = 0;
         }
